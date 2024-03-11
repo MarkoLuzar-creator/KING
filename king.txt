@@ -1,0 +1,52 @@
+wordpress install: https://developer.wordpress.org/advanced-administration/before-install/howto-install/
+
+detailed instructions
+
+#sudo su (geslo vegova)
+#cd
+#wget https://wordpress.org/latest.zip (lnk dobis to da greš na download in copyaš link gumba)
+#unzip latest.zip
+#ls
+#apt update
+#apt install apache2 mariadb-server
+
+#mysql
+#CREATE DATABASE wp;
+#CREATE USER Marko@localhost IDENTIFIED BY 'varno geslo';
+#GRANT ALL PRIVILEGES ON wp.* TO Marko@localhost;
+#FLUSH PRIVILEGES;
+#EXIT;
+
+#localhost - na firefox link da vidš apache
+#/etc/apache2/
+#/var/
+
+#cp -r wordpress/ /var/www/wordpress
+#cd /var/www 
+#cd /wordpress
+
+#ls -la
+#cd /var/www 
+#chown -R www-data:www-data wordpress/
+#cd /etc/apache2/
+#cd sites-available
+#nano 000-default.conf
+
+
+Document root - tja kmor kaže
+DocumentRoot /var/www/html spremenimo v  /var/www/wordpress
+ctrl x save
+
+#systemctl restart apache2
+#apt install php
+#systemctl restart apache2
+#apt install php-mysqli
+#systemctl restart apache2
+
+
+ime podatkovne baze je ime 
+#in poj nastaviš vse
+
+
+
+
