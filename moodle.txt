@@ -1,1 +1,2 @@
-idk
+https://cloudcone.com/docs/article/how-to-install-moodle-on-ubuntu-18-04/
+https://docs.moodle.org/403/en/Installing_Moodle
