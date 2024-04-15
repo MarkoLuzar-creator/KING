@@ -1,0 +1,22 @@
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-nextcloud-on-debian-9 - tutorial
+
+
+#sudo su
+#apt install php mariadb-server apache2
+#wget https://download.nextcloud.com/server/releases/latest.zip
+#unzip latest.zip
+#ls
+#cd /var/www/html
+#rm index.html
+#cp -R /home/vegova/nextcloud/* .
+#systemctl restart apache2
+#apt install php-mysql php-zip php-dom php-xml php-curl php-gd php-mbstring
+#cd /var/www/
+#chown -R www-data:www-data html/
+#systemctl restart apache2
+#mysql -u root
+#CREATE DATABASE nextcloud;
+#CREATE USER 'Marko'@'localhost' IDENTIFIED BY 'varno geslo';
+#GRANT ALL PRIVILEGES ON nextcloud.* TO 'Marko'@'localhost';
+#FLUSH PRIVILEGES;
+#EXIT;
