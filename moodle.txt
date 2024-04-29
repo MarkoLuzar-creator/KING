@@ -1,2 +1,31 @@
-https://cloudcone.com/docs/article/how-to-install-moodle-on-ubuntu-18-04/
 https://docs.moodle.org/403/en/Installing_Moodle
+
+#sudo su (geslo vegova)
+#apt update
+#apt install apache2 mariadb-server
+#apt install php-mysql php-zip php-dom php-xml php-curl php-gd php-mbstring
+#service apache2 restart
+#apt install git
+#cd /opt
+#sudo git clone git://git.moodle.org/moodle.git
+#cd moodle
+#sudo git branch --track MOODLE_400_STABLE origin/MOODLE_400_STABLE
+#sudo git checkout MOODLE_400_STABLE
+
+#sudo cp -R /opt/moodle /var/www/html/
+#sudo mkdir /var/moodledata
+#sudo chown -R www-data /var/moodledata
+#sudo chmod -R 777 /var/moodledata
+#sudo chmod -R 0755 /var/www/html/moodle
+
+#sudo mysql -u root -p
+CREATE DATABASE moodle;
+#CREATE USER 'Marko'@'localhost' IDENTIFIED BY 'varno geslo';
+#GRANT ALL PRIVILEGES ON moodle.* TO 'Marko'@'localhost';
+#FLUSH PRIVILEGES;
+#EXIT;
+
+#sudo chmod -R 777 /var/www/html/moodle
+#sudo chmod -R 0755 /var/www/html/moodle
+#sudo nano /etc/apache2/sites-available/000-default.conf
+DocumentRoot /var/www/html spremenimo v  /var/www/wordpress

@@ -2,6 +2,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ne
 
 
 #sudo su
+#apt update
 #apt install php mariadb-server apache2
 #wget https://download.nextcloud.com/server/releases/latest.zip
 #unzip latest.zip
